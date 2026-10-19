@@ -206,22 +206,22 @@ figure { margin: 0; }
 }
 
 /* Size chart: pads drawn to scale (1 inch = --u) */
-.sizes { --u: 6px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 28px 34px; }
+.sizes { --u: 7.5px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 28px 34px; }
 .size { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .size .pad {
   width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u));
-  position: relative; background: #fbfdff; border: 3px solid var(--sky);
-  box-shadow: inset 0 0 0 5px #fbfdff, inset 0 0 0 6px rgba(47,132,194,.45), 0 10px 24px rgba(0,0,0,.35);
+  position: relative; background: #8cc6ea; border-radius: 3px;
+  box-shadow: 0 14px 30px rgba(0,0,0,.42), inset 0 0 0 1px rgba(255,255,255,.25);
 }
+/* absorbent core: soft white cushion on the blue backsheet, like the flat product photo */
 .size .pad::after {
-  content: ""; position: absolute; inset: 11px;
-  background-color: #eef6fc;
-  background-image:
-    repeating-linear-gradient(45deg, rgba(47,132,194,.38) 0 1px, transparent 1px 10px),
-    repeating-linear-gradient(-45deg, rgba(47,132,194,.38) 0 1px, transparent 1px 10px);
+  content: ""; position: absolute; inset: 9% 9%; border-radius: 3px;
+  background: radial-gradient(ellipse at 50% 38%, #ffffff 0%, #f7fafd 50%, #e4eef6 100%);
+  box-shadow: inset 0 -8px 16px rgba(40,95,145,.16), inset 0 2px 3px rgba(255,255,255,.9), 0 1px 3px rgba(8,26,46,.25);
 }
-.size .dim { font-family: var(--mono); font-size: 14px; color: var(--white); }
+.size .dim { font-family: var(--mono); font-size: 15px; color: var(--white); }
 .size .dim span { display: block; font-family: var(--body); font-size: 12px; color: var(--muted); }
+@media (max-width: 1100px) { .sizes { --u: 6px; } }
 @media (max-width: 700px) { .sizes { --u: 4px; gap: 22px 22px; } }
 
 /* Spec table */
