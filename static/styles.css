@@ -207,7 +207,7 @@ figure { margin: 0; }
 
 /* Size chart: pads drawn to scale (1 inch = --u) */
 .sizes { --u: 7.5px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 28px 34px; }
-.size { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.size { display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center; }
 .size .pad {
   width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u));
   position: relative; background: #8cc6ea; border-radius: 3px;
