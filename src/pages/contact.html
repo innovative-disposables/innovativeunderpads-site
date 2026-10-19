@@ -1,0 +1,69 @@
+<!-- title: Request a Quote | Innovative Disposables -->
+<!-- description: Request a quote or free samples for private label disposable underpads. Call 908-222-7111, fax 908-222-7113 or send us your specifications. -->
+<!-- nav: contact -->
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Request a Quote</span>
+    <h1>Tell us about your program.</h1>
+    <p class="lede">Share your volume and specifications and our customer care team will come back to you with a quote. Free samples are available on request.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <form class="form" id="quote-form" name="quote" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="website">
+      <input type="hidden" name="form-name" value="quote">
+      <p hidden><label>Leave this empty <input name="website"></label></p>
+      <div class="field"><label for="q-company">Company</label><input type="text" id="q-company" name="company" autocomplete="organization" required></div>
+      <div class="field"><label for="q-name">Your name</label><input type="text" id="q-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="q-email">Email</label><input type="email" id="q-email" name="email" autocomplete="email" required></div>
+      <div class="field"><label for="q-phone">Phone</label><input type="tel" id="q-phone" name="phone" autocomplete="tel"></div>
+      <div class="field full"><label for="q-volume">Estimated annual volume <span class="hint">(number of pads or cases per year)</span></label><input type="text" id="q-volume" name="annual_volume"></div>
+      <fieldset class="field full">
+        <legend>Sizes</legend>
+        <div class="checks">
+          <label><input type="checkbox" id="q-size-1724" name="sizes" value="17x24"> <span class="mono">17&times;24</span></label>
+          <label><input type="checkbox" id="q-size-2324" name="sizes" value="23x24"> <span class="mono">23&times;24</span></label>
+          <label><input type="checkbox" id="q-size-2336" name="sizes" value="23x36"> <span class="mono">23&times;36</span></label>
+          <label><input type="checkbox" id="q-size-3030" name="sizes" value="30x30"> <span class="mono">30&times;30</span></label>
+          <label><input type="checkbox" id="q-size-3036" name="sizes" value="30x36"> <span class="mono">30&times;36</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="field full">
+        <legend>Absorbency</legend>
+        <div class="checks">
+          <label><input type="checkbox" id="q-abs-light" name="absorbency" value="Light"> Light</label>
+          <label><input type="checkbox" id="q-abs-medium" name="absorbency" value="Medium"> Medium</label>
+          <label><input type="checkbox" id="q-abs-heavy" name="absorbency" value="Heavy"> Heavy</label>
+          <label><input type="checkbox" id="q-abs-max" name="absorbency" value="Maximum"> Maximum</label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="q-color">Backsheet color</label>
+        <select id="q-color" name="backsheet">
+          <option value="">No preference</option><option>White</option><option>Blue</option><option>Peach</option><option>Green</option>
+        </select>
+      </div>
+      <div class="field"><label for="q-pack">Packaging</label>
+        <select id="q-pack" name="packaging">
+          <option value="">Not sure yet</option><option>Transparent bags</option><option>Printed poly bags</option><option>Cartons</option><option>Bulk packs</option><option>Private label retail</option>
+        </select>
+      </div>
+      <div class="field full"><label for="q-notes">Anything else we should know</label><textarea id="q-notes" name="notes"></textarea></div>
+      <div class="field full"><div class="checks" style="margin-top:0"><label><input type="checkbox" id="q-sample" name="samples" value="yes"> Please send free samples</label></div></div>
+      <div class="full btn-row" style="align-items:center;"><button class="btn btn-primary" type="submit">Send request</button><span class="form-note">We do not publish prices. Every quote is built to your specification.</span></div>
+      <div class="form-status" id="form-status" role="status" hidden></div>
+    </form>
+
+    <aside class="contact-card">
+      <h3>Customer care</h3>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+19082227111">908-222-7111</a></dd></div>
+        <div><dt>Fax</dt><dd>908-222-7113</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:innovativedisposablecsrcare@gmail.com">innovativedisposablecsrcare@gmail.com</a></dd></div>
+        <div><dt>Address</dt><dd>3611 Kennedy Road<br>South Plainfield, NJ 07080</dd></div>
+        <div><dt>Hours</dt><dd>9:00 am to 5:00 pm</dd></div>
+        <div><dt>Samples</dt><dd>Free. Request by phone, fax or this form.</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>

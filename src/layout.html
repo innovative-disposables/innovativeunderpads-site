@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="utility">
+  <div class="wrap">
+    <span class="usa">{{flag}} Made in the USA &middot; South Plainfield, New Jersey</span>
+    <span class="contact-mini"><span>Tel <a href="tel:+19082227111">908-222-7111</a></span><span>Fax 908-222-7113</span></span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <!-- LOGO SLOT: the logo thread will supply the mark. Drop it in as images/logo.svg and un-comment the img. -->
+      <!-- <span class="logo-slot"><img src="images/logo.svg" alt=""></span> -->
+      <span class="brand-text">
+        <span class="brand-name">Innovative Disposables</span>
+        <span class="brand-tag">Private Label Manufacturer of Underpads</span>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="manufacturing.html"{{cur:manufacturing}}>Manufacturing</a>
+      <a href="products.html"{{cur:products}}>Products</a>
+      <a href="private-label.html"{{cur:private-label}}>Private Label</a>
+      <a href="about.html"{{cur:about}}>About</a>
+      <a href="market.html"{{cur:market}}>Market</a>
+      <a class="btn btn-primary" href="contact.html"{{cur:contact}}>Request a Quote</a>
+    </nav>
+  </div>
+</header>
+<main>
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      {{seal:footer}}
+      <div>
+        <div class="footer-name">Innovative Disposables</div>
+        <p>Private label manufacturer of disposable underpads.<br>3611 Kennedy Road<br>South Plainfield, NJ 07080</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Tel <a href="tel:+19082227111">908-222-7111</a></li>
+          <li>Fax 908-222-7113</li>
+          <li><a href="mailto:innovativedisposablecsrcare@gmail.com">innovativedisposablecsrcare@gmail.com</a></li>
+          <li>Hours 9:00 am to 5:00 pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="private-label.html">Private Label</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="market.html">Market</a></li>
+          <li><a href="contact.html">Request a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; {{year}} Innovative Disposables. All rights reserved.</span>
+      <span>Proudly manufactured in the United States of America.</span>
+    </div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
