@@ -105,7 +105,7 @@ p { margin: 0; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 16px; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--white); min-width: 0; }
-.brand-logo { height: 84px; width: auto; max-width: 100%; margin-block: -10px; margin-left: -12px; }
+.brand-logo { height: 88px; width: auto; max-width: 100%; margin-block: -10px; margin-left: -12px; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
 .brand-name { font-family: var(--display); font-size: 25px; font-weight: 600; letter-spacing: 0.01em; }
 .brand-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
