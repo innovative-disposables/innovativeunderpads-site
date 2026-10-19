@@ -10,4 +10,4 @@ Static site for Innovative Disposables. No framework, no dependencies beyond Pyt
 Rules for content: no names or faces of staff or owners anywhere; no prices.
 
 The quote form is handled by Netlify Forms (form detection must be on in Netlify). Submissions land on thanks.html; set email notifications in Netlify under Forms. Adding `data-draft` to the form turns submissions off again.
-The logo goes in `static/images/logo.svg`; un-comment the `logo-slot` line in `src/layout.html`.
+Logo (option 2, modern iD): `static/images/logo/lockup.svg` in the header, `lockup-white.svg` in the footer; favicons in `static/`. Source files are in the project's logo folder.

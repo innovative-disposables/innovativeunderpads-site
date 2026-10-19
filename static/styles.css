@@ -103,8 +103,7 @@ p { margin: 0; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 16px; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--navy); min-width: 0; }
-.brand .logo-slot { width: 44px; height: 44px; flex: none; display: grid; place-items: center; }
-.brand .logo-slot img { width: 44px; height: 44px; object-fit: contain; }
+.brand-logo { height: 74px; width: auto; max-width: 100%; margin-block: -10px; margin-left: -12px; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
 .brand-name { font-family: var(--display); font-size: 25px; font-weight: 600; letter-spacing: 0.01em; }
 .brand-tag { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
@@ -129,7 +128,7 @@ p { margin: 0; }
   .nav .btn { margin-top: 16px; justify-content: center; }
   .utility .contact-mini { display: none; }
 }
-@media (max-width: 420px) { .brand-tag { display: none; } .brand-name { font-size: 21px; } }
+@media (max-width: 520px) { .brand-logo { height: 54px; margin-block: -8px; margin-left: -9px; } }
 
 /* Sections */
 .section { padding-block: var(--band); }
@@ -369,7 +368,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .footer-top a { color: var(--on-navy); text-decoration: none; }
 .footer-top a:hover { text-decoration: underline; }
 .footer-top ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.footer-name { font-family: var(--display); font-size: 26px; color: var(--white); line-height: 1.1; margin-bottom: 8px; }
+.footer-logo { width: 280px; max-width: 100%; height: auto; margin: -12px 0 6px -10px; }
 .footer-bottom { border-top: 1px solid rgba(169,191,211,.2); padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; }
 @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .footer-top { grid-template-columns: 1fr; } }
