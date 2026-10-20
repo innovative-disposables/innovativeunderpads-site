@@ -16,7 +16,7 @@
 <body>
 <div class="utility">
   <div class="wrap">
-    <span class="usa">{{flag}} Made in the USA &middot; South Plainfield, New Jersey</span>
+    <span class="usa">{{flag}} <span>Made in the USA &middot; FDA Registered Facility<span class="loc"> &middot; South Plainfield, New Jersey</span></span></span>
     <span class="contact-mini"><span>Tel <a href="tel:+19082227111">908-222-7111</a></span><span>Fax 908-222-7113</span></span>
   </div>
 </div>
@@ -32,7 +32,8 @@
       <a href="private-label.html"{{cur:private-label}}>Private Label</a>
       <a href="about.html"{{cur:about}}>About</a>
       <a href="market.html"{{cur:market}}>Market</a>
-      <a class="btn btn-primary" href="contact.html"{{cur:contact}}>Request a Quote</a>
+      <a href="contact.html"{{cur:contact}}>Contact</a>
+      <a class="btn btn-primary" href="tel:+19082227111">Call to Request a Quote<span class="btn-phone">908-222-7111</span></a>
     </nav>
   </div>
 </header>
@@ -42,7 +43,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      {{seal:footer}}
+      <div class="footer-seals">{{seal:footer}}{{fda:footer}}</div>
       <div>
         <img class="footer-logo" src="images/logo/lockup-white.svg" alt="Innovative Disposables" width="1807" height="173">
         <p>Private label manufacturer of disposable underpads.<br>3611 Kennedy Road<br>South Plainfield, NJ 07080</p>
@@ -64,7 +65,7 @@
           <li><a href="private-label.html">Private Label</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="market.html">Market</a></li>
-          <li><a href="contact.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>

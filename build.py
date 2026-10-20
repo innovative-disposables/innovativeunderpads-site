@@ -47,6 +47,25 @@ def seal(uid):
     )
 
 
+def fda_seal(uid):
+    """FDA registered facility badge, drawn to match the USA seal. Uses no FDA logo."""
+    return (
+        f'<svg class="seal" viewBox="0 0 200 200" role="img" aria-label="FDA registered facility">'
+        f'<defs><path id="fring-{uid}" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/></defs>'
+        '<circle cx="100" cy="100" r="98" fill="#0d2742"/>'
+        '<circle cx="100" cy="100" r="92" fill="none" stroke="#78bfe8" stroke-width="1"/>'
+        '<circle cx="100" cy="100" r="57" fill="#081a2e" stroke="#78bfe8" stroke-width="1"/>'
+        f'<text font-size="12.5" fill="#ffffff"><textPath href="#fring-{uid}" textLength="452" lengthAdjust="spacing">'
+        "FDA REGISTERED FACILITY ★ SOUTH PLAINFIELD, NEW JERSEY ★</textPath></text>"
+        '<path d="M100,56 l13,5 v9 c0,8 -5.5,13.5 -13,17 c-7.5,-3.5 -13,-9 -13,-17 v-9 z" fill="none" stroke="#78bfe8" stroke-width="2"/>'
+        '<path d="M94,71 l4.5,4.5 l8,-8.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>'
+        '<text x="100" y="122" text-anchor="middle" fill="#ffffff" '
+        'style="font-family:var(--display);font-weight:600;font-size:36px;letter-spacing:.06em">FDA</text>'
+        '<text x="101" y="139" text-anchor="middle" fill="#78bfe8" style="font-size:8.5px;letter-spacing:.24em">REGISTERED</text>'
+        "</svg>"
+    )
+
+
 def build():
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -63,6 +82,7 @@ def build():
         for key in NAV_KEYS:
             html = html.replace("{{cur:%s}}" % key, ' aria-current="page"' if meta.get("nav") == key else "")
         html = re.sub(r"\{\{seal:([\w-]+)\}\}", lambda m: seal(m.group(1)), html)
+        html = re.sub(r"\{\{fda:([\w-]+)\}\}", lambda m: fda_seal(m.group(1)), html)
         leftover = re.findall(r"\{\{.*?\}\}", html)
         if leftover:
             raise SystemExit(f"{page.name}: unfilled placeholders {leftover}")
